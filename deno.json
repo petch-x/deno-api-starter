@@ -1,0 +1,12 @@
+{
+  "tasks": {
+    "dev": "deno run --allow-net --allow-read --allow-env --allow-write --allow-sys --watch main.ts",
+    "start": "deno run --allow-net --allow-read --allow-env --allow-write --allow-sys main.ts",
+    "clean": "deno cache --reload main.ts",
+    "build": "deno compile --allow-net --allow-read  --allow-env --allow-write --allow-sys --env=.env --output server main.ts"
+  },
+  "compilerOptions": {
+    "strict": true
+  },
+  "lock": true
+}
